@@ -5,8 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form using Flexbox</title>
+    <script src="https://kit.fontawesome.com/5e0c9f69f2.js" crossorigin="anonymous"></script>
+    <style>
+        .top-container{
+            display: flex;
+            justify-content: center;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid crimson;
+            padding: 40px;
+            border-radius: 5px;
+        }
+        h2{
+            font-size: 1.3em;
+            color: darkorange;
+            font-weight: 900;
+            text-align: center;
+        }   
+        .login-form input{
+            margin: 5px 10px 5px 10px;
+            padding: 10px;
+        }
+        .btn{
+            color: rgb(255, 255, 255);
+            background-color: darkorange;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.3rem;
+        }
+        nav, ul{
+            list-style-type: none;
+            display: flex;
+        }
+        nav{
+            justify-content: space-between;
+            align-items: center;
+        }
+        ul li a{
+            text-decoration: none;
+            margin-right: 15px;
+            color: darkorange;
+            font-size: 1.3rem;
+        }
+        nav div{
+            display: flex;
+            margin-right: 30px;
+        }
+        nav div li a{
+            margin-right: 15px;
+            font-size: 1.3rem;
+            color: darkorange;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Services</a></li>
+            
+        </ul>
+        <div>
+            <li><a href=""><i class="fas fa-user"></i></a></li>
+            <li><a href=""><i class="fas fa-sign-out-alt"></i></a></li>
+        </div>
+    </nav>
+    <section class="top-container">
+        <form action="" class="login-form">
+            <h2>Log-in</h2>
+            <input type="email" name="email" id="email" placeholder="Enter your e-mail">
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+            <input type="button" value="Submit" class="btn">
+        </form>
+    </section>
 </body>
 </html>
